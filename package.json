@@ -1,0 +1,12 @@
+{
+  "name": "jcloud-tschain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jungwoonlim/jcloud-tschain.git",
+  "author": "jungwoonlim <wypo23@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
