@@ -1,8 +1,20 @@
-const sayHello = (name: string, age: number, gender: string): string =>{
-    return `Hello ${name}, you are ${age}, you are a ${gender}`;
+interface Human {
+    name: string,
+    age: number,
+    gender: string
 }
 
-const data = sayHello("jCloud", 30, "male");
+const person = {
+    name: "jcloud",
+    age: 30,
+    gender: "male"
+}
+
+const sayHello = (person: Human): string =>{
+    return `Hello ${person.name}, you are ${person.age}, you are a ${person.gender}`;
+}
+
+const data = sayHello(person);
 
 console.log(data);
 
